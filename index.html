@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPHS IN DSA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GRAPHS IN DSA</h1>
+    </header>
+    <main>
+        <section class="graph">
+            <h2>Graph:</h2>
+            <p>Real-time Example: A social network graph where nodes represent users, and edges represent friendships or connections between users.</p>
+        </section>
+
+        <section class="information">
+            <h2>Information:</h2>
+            <ul>
+                <li><strong>When to Use:</strong> Use graphs when you need to model relationships between entities, such as:</li>
+                <ul>
+                    <li>Social networks</li>
+                    <li>Transportation systems</li>
+                    <li>Computer networks</li>
+                </ul>
+                <li><strong>When Not to Use:</strong> Avoid using graphs for:</li>
+                <ul>
+                    <li>Simple data structures</li>
+                    <li>When other data structures suffice and there are no relationships between entities</li>
+                </ul>
+                <li><strong>Why We Use:</strong> Graphs provide a flexible and intuitive way to represent and analyze complex relationships and structures.</li>
+            </ul>
+        </section>
+          <section class="information">
+            <h2>Information:</h2>
+            <ul>
+                <li><strong>When to Use:</strong> Think of using graphs like drawing a map where you need to show how different places are connected, like showing friendships in a social network or roads in a city.</li>
+                <li><strong>When Not to Use:</strong> If you're just dealing with simple lists or tables of data that don't have connections or relationships between them, you might not need a graph.</li>
+                <li><strong>Why We Use:</strong> Graphs are helpful because they let us easily see and understand how different things are related to each other, making them great for modeling networks or relationships.</li>
+                <li><strong>Definition:</strong> A collection of nodes (vertices) and edges that connect pairs of nodes.</li>
+            </ul>
+        </section>
+    </main>
+     <section class="diagram">
+            <h2>Diagram:</h2>
+            <pre>
+               A --- B
+               |     |
+               C --- D
+            </pre>
+        </section>
+     <div class="node-info">
+                <h3>Node (or Vertex):</h3>
+                <p><strong>Real-time Example:</strong> In a transportation network, nodes could represent cities, and each node represents a specific city location.</p>
+            </div>
+            <div class="node-info">
+                <h3>When to Use:</h3>
+                <p>Nodes are fundamental units of graphs and should be used whenever you need to represent individual entities or points in your graph.</p>
+            </div>
+            <div class="node-info">
+                <h3>When Not to Use:</h3>
+                <p>There's typically no reason not to use nodes when working with graphs.</p>
+            </div>
+            <div class="node-info">
+                <h3>Why We Use:</h3>
+                <p>Nodes serve as the building blocks of graphs, allowing us to represent and manipulate individual entities within a network.</p>
+            </div>
+     <div class="node-info">
+                <h3>When to Use:</h3>
+                <p>Use nodes whenever you want to talk about individual things or points in your graph, like people in a social network or cities in a transportation system.</p>
+            </div>
+            <div class="node-info">
+                <h3>When Not to Use:</h3>
+                <p>There's usually no reason not to use nodes when working with graphs because they're the basic building blocks.</p>
+            </div>
+            <div class="node-info">
+                <h3>Why We Use:</h3>
+                <p>Nodes help us keep track of and organize the individual parts of our graph, making it easier to understand and work with.</p>
+            </div>
+            <div class="node-info">
+                <h3>Definition:</h3>
+                <p>A fundamental unit of a graph, representing a single entity or point.</p>
+            </div>
+        </section>
+
+        <section class="diagram">
+            <h2>Diagram:</h2>
+            <pre>
+               A     B
+               |     |
+               C     D
+            </pre>
+        </section>
+     <div class="edge-info">
+                <h3>Edge:</h3>
+                <p><strong>Real-time Example:</strong> In a computer network, edges could represent physical connections (cables) between computers.</p>
+            </div>
+            <div class="edge-info">
+                <h3>When to Use:</h3>
+                <p>Use edges to represent connections or relationships between nodes in your graph.</p>
+            </div>
+            <div class="edge-info">
+                <h3>When Not to Use:</h3>
+                <p>If your graph doesn't involve relationships between entities, you may not need edges.</p>
+            </div>
+            <div class="edge-info">
+                <h3>Why We Use:</h3>
+                <p>Edges define the relationships between nodes in a graph and enable us to model interactions or connections between entities.</p>
+            </div>
+     <div class="edge-info">
+                <h3>When to Use (Additional):</h3>
+                <p>Imagine drawing lines between different places on your map to show how they're connected. That's what edges do in a graph—they represent connections between nodes.</p>
+            </div>
+            <div class="edge-info">
+                <h3>When Not to Use (Additional):</h3>
+                <p>If you're working with a graph where things aren't connected to each other, you might not need edges.</p>
+            </div>
+            <div class="edge-info">
+                <h3>Why We Use (Additional):</h3>
+                <p>Edges help us show and understand the relationships or connections between different parts of our graph.</p>
+            </div>
+            <div class="edge-info">
+                <h3>Definition (Additional):</h3>
+                <p>A connection between two nodes (vertices) in a graph.</p>
+            </div>
+        </section>
+
+        <section class="diagram">
+            <h2>Diagram:</h2>
+            <pre>
+               A --- B
+               |     |
+               C --- D
+            </pre>
+        </section>
+      <h2>Directed Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>Directed Edge (or Arc):</strong></li>
+            <ul>
+                <li><strong>Real-time Example:</strong> In a website link structure, directed edges represent hyperlinks from one webpage to another, indicating the direction of navigation.</li>
+            </ul>
+            <li><strong>When to Use:</strong> Use directed edges when you need to represent one-way relationships or directional connections between nodes.</li>
+            <li><strong>When Not to Use:</strong> If all relationships in your graph are bidirectional, you may not need directed edges.</li>
+            <li><strong>Why We Use:</strong> Directed edges allow us to model asymmetrical relationships or directional flows within a graph.</li>
+            <li><strong>Definition:</strong> An edge with a specific direction, indicating a one-way relationship between nodes.</li>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Directed Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>Directed Edge (or Arc):</strong></li>
+            <ul>
+                <li><strong>When to Use:</strong> Use directed edges when you want to show that the relationship between two things has a specific direction, like arrows pointing from one place to another on your map.</li>
+                <li><strong>When Not to Use:</strong> If the relationships in your graph don't have a clear direction, you might not need directed edges.</li>
+                <li><strong>Why We Use:</strong> Directed edges help us show one-way relationships or flows between things in our graph, giving us more detailed information about how things are connected.</li>
+                <li><strong>Diagram:</strong></li>
+                <pre>
+                   A --> B
+                   |     |
+                   V     V
+                   C --> D
+                </pre>
+            </ul>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Undirected Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>Real-time Example:</strong> In a road network, undirected edges represent two-way streets where vehicles can travel in both directions.</li>
+            <li><strong>When to Use:</strong> Use undirected edges when relationships between nodes are bidirectional, and there's no inherent directionality in the connections.</li>
+            <li><strong>When Not to Use:</strong> If relationships in your graph have clear directionalities, undirected edges may not be appropriate.</li>
+            <li><strong>Why We Use:</strong> Undirected edges simplify the representation of symmetric relationships or mutual connections between nodes.</li>
+            <li><strong>Definition:</strong> An edge without a specific direction, representing a bidirectional relationship between nodes.</li>
+        </ul>
+    </div>
+  <div class="information">
+        <h2>Undirected Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>When to Use:</strong> Imagine drawing lines between places on your map without arrows to show that the connections go both ways. That's what undirected edges do—they represent connections where there's no specific direction.</li>
+            <li><strong>When Not to Use:</strong> If you're dealing with relationships that have clear one-way directions, you might not need undirected edges.</li>
+            <li><strong>Why We Use:</strong> Undirected edges simplify the representation of relationships that are bidirectional or mutual, making it easier to understand symmetric connections.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A --- B
+               |     |
+               C --- D
+            </pre>
+        </ul>
+    </div>
+      <div class="information">
+        <h2>Weighted Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>Real-time Example:</strong> In a flight network, weighted edges represent the distance between airports, where the weight is the flight distance between two cities.</li>
+            <li><strong>When to Use:</strong> Use weighted edges when you need to assign numerical values (weights) to the connections between nodes, representing costs, distances, or strengths of relationships.</li>
+            <li><strong>When Not to Use:</strong> If all connections in your graph have equal significance, you may not need weighted edges.</li>
+            <li><strong>Why We Use:</strong> Weighted edges enable us to model and analyze complex relationships by incorporating quantitative information into the graph structure.</li>
+            <li><strong>Definition:</strong> An edge with a numerical value (weight) assigned to it, representing a quantitative measure of the relationship between nodes.</li>
+        </ul>
+    </div>
+<div class="information">
+        <h2>Weighted Edge:</h2>
+        <ul class="edge-info">
+            <li><strong>When to Use:</strong> Use weighted edges when you want to give each connection between things a numerical value, like showing the distance between cities on your map.</li>
+            <li><strong>When Not to Use:</strong> If all connections in your graph are considered equal or don't have specific values associated with them, you might not need weighted edges.</li>
+            <li><strong>Why We Use:</strong> Weighted edges help us include additional information, such as costs or strengths, in our graph, which can be essential for making decisions or analyzing relationships.</li>
+            <li><strong>Definition:</strong> An edge with an associated numerical value (weight), indicating the cost, distance, or strength of the relationship between nodes.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A -3- B
+               |     |
+               C -5- D
+            </pre>
+        </ul>
+    </div>
+<div class="information">
+        <h2>Degree:</h2>
+        <ul class="degree-info">
+            <li><strong>Real-time Example:</strong> In a social network, the degree of a user represents the number of friends they have. The more friends, the higher the degree.</li>
+            <li><strong>When to Use:</strong> Use degree to analyze the connectivity of nodes in your graph, which is helpful for understanding node centrality and network structure.</li>
+            <li><strong>When Not to Use:</strong> Degree is a fundamental concept in graph theory and is applicable in most scenarios involving graph analysis.</li>
+            <li><strong>Why We Use:</strong> Degree provides valuable insights into the importance and connectivity of nodes within a graph, guiding various graph algorithms and analyses.</li>
+            <li><strong>Definition:</strong> The number of edges incident to a node.</li>
+        </ul>
+    </div>
+  <div class="information">
+        <h2>Degree:</h2>
+        <ul class="degree-info">
+            <li><strong>When to Use:</strong> Use degree to understand how many connections each thing in your graph has. It's like counting how many friends each person has in a social network.</li>
+            <li><strong>When Not to Use:</strong> Degree is a fundamental concept in graph theory and is usually applicable in most scenarios involving graphs.</li>
+            <li><strong>Why We Use:</strong> Degree helps us see which parts of our graph are more central or connected, which can be important for understanding its overall structure.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A --- B
+               |     |
+               C --- D
+            </pre>
+            <li><strong>Degree of A = 2, Degree of B = 3, Degree of C = 2, Degree of D = 2</strong></li>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Path:</h2>
+        <ul class="path-info">
+            <li><strong>Real-time Example:</strong> In a map application, finding the shortest path between two locations involves traversing a series of connected roads.</li>
+            <li><strong>When to Use:</strong> Use paths to find routes or sequences of nodes between two points in your graph, essential for navigation and network analysis.</li>
+            <li><strong>When Not to Use:</strong> Paths are integral to graph traversal and analysis and are typically used in most graph-related tasks.</li>
+            <li><strong>Why We Use:</strong> Paths allow us to identify and navigate connections between nodes in a graph, facilitating tasks such as route planning, recommendation systems, and network analysis.</li>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Path:</h2>
+        <ul class="path-info">
+            <li><strong>When to Use:</strong> Use paths to find routes or sequences of places between two points on your map, like finding the shortest route between two cities.</li>
+            <li><strong>When Not to Use:</strong> Paths are essential for moving around and understanding networks, so they're typically used in most graph-related tasks.</li>
+            <li><strong>Why We Use:</strong> Paths help us navigate and explore connections between different parts of our graph, which is crucial for tasks like route planning or understanding network connections.</li>
+            <li><strong>Definition:</strong> A sequence of nodes connected by edges, forming a route from one node to another.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A - B - D
+               |   |
+               C -/
+            </pre>
+        </ul>
+    </div>
+      <div class="information">
+        <h2>Cycle:</h2>
+        <ul class="cycle-info">
+            <li><strong>Real-time Example:</strong> In a computer network, a cycle could represent a loop of data transmission where data packets are continuously circulated.</li>
+            <li><strong>When to Use:</strong> Use cycles to identify loops or recurring patterns within your graph, which can have implications for system stability or recurring processes.</li>
+            <li><strong>When Not to Use:</strong> Cycles are a fundamental concept in graph theory and are applicable in most scenarios involving graph analysis.</li>
+            <li><strong>Why We Use:</strong> Cycles help us understand the presence of feedback loops or recurring patterns within a network, influencing system behavior and stability analysis.</li>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Cycle:</h2>
+        <ul class="cycle-info">
+            <li><strong>When to Use:</strong> Use cycles to identify loops or repeating patterns within your graph, like finding loops in a road network or repeating processes in a system.</li>
+            <li><strong>When Not to Use:</strong> Cycles are a fundamental concept in graph theory and are applicable in most scenarios involving graphs.</li>
+            <li><strong>Why We Use:</strong> Cycles help us understand recurring patterns or feedback loops within a network, which can be important for analyzing system behavior or stability.</li>
+            <li><strong>Definition:</strong> A path that starts and ends at the same node, forming a loop.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A - B
+               |   |
+               C - D
+               |___|
+            </pre>
+        </ul>
+    </div>
+    <div class="information">
+        <h2>Connected Graph:</h2>
+        <ul class="connected-graph-info">
+            <li><strong>Real-time Example:</strong> In an email network, a connected graph ensures that every user can communicate with any other user through a chain of email exchanges.</li>
+            <li><strong>When to Use:</strong> Use connected graphs to ensure there's a path between every pair of nodes, ensuring network connectivity and accessibility.</li>
+            <li><strong>When Not to Use:</strong> If network connectivity isn't a requirement or if the graph naturally forms disconnected components, connectedness may not be necessary.</li>
+            <li><strong>Why We Use:</strong> Connected graphs ensure that all nodes in a network are reachable and can communicate with each other, crucial for various applications like communication networks or social networks.</li>
+            <li><strong>Definition:</strong> A graph in which there is a path between every pair of nodes.</li>
+        </ul>
+    </div>
+     <div class="information">
+        <h2>Connected Graph:</h2>
+        <ul class="connected-graph-info">
+            <li><strong>When to Use:</strong> Use connected graphs to ensure that everything in your network is reachable and can communicate with each other, like ensuring every house in a neighborhood has roads connecting to it.</li>
+            <li><strong>When Not to Use:</strong> If your graph naturally has separate parts that don't need to be connected, you might not need to worry about connectedness.</li>
+            <li><strong>Why We Use:</strong> Connected graphs ensure that there are no isolated parts in our network, which is important for communication, transportation, or social networks.</li>
+            <li><strong>Diagram:</strong></li>
+            <pre>
+               A --- B    E
+               |     |    |
+               C --- D    F
+            </pre>
+        </ul>
+    </div>
+
+ <div class="information">
+        <h2>Disconnected Graph:</h2>
+        <ul class="disconnected-graph-info">
+            <li><strong>Real-time Example:</strong> A disconnected graph could represent separate islands in a social network, where some groups of users have no connections to other groups.</li>
+            <li><strong>Definition:</strong> A graph in which there are two or more components (subgraphs) that are not connected to each other.</li>
+            <li><strong>When to Use:</strong> Disconnected graphs can be useful for modeling systems with separate components or disconnected entities, such as disjoint social networks or isolated communication networks.</li>
+            <li><strong>When Not to Use:</strong> Avoid using disconnected graphs if network connectivity is essential for your application or analysis.</li>
+            <li><strong>Why We Use:</strong> Disconnected graphs help us understand the structure of complex systems with multiple independent components, facilitating analysis and modeling of separate entities.</li>
+        </ul>
+    </div>
+      <div class="information">
+        <h2>Disconnected Graph:</h2>
+        <p><strong>Explanation:</strong> Imagine a group of islands where there are no bridges or boats connecting them. Each island is like a separate group, and they don't communicate with each other. This is what a disconnected graph looks like. It's a graph where there are separate groups of nodes, and there's no connection between these groups.</p>
+        <ul class="disconnected-graph-info">
+            <li><strong>When to Use:</strong> Use when you have separate groups or components in your data, and they don't interact with each other.</li>
+        </ul>
+        <h3>Diagram:</h3>
+        <pre>
+           A --- B          E    G
+           |     |          |    |
+           C --- D          F    H
+        </pre>
+    </div>
+    <div class="information">
+        <h2>Complete Graph:</h2>
+        <ul class="complete-graph-info">
+            <li><strong>Real-time Example:</strong> In a telephone network, a complete graph would mean that every phone line is directly connected to every other phone line.</li>
+            <li><strong>When to Use:</strong> Complete graphs are suitable for modeling scenarios where there is a strong relationship between every pair of distinct entities, such as fully interconnected communication networks or fully connected social networks.</li>
+            <li><strong>When Not to Use:</strong> Avoid using complete graphs for large-scale networks with many nodes, as the number of edges grows quadratically with the number of nodes, leading to high computational and storage requirements.</li>
+            <li><strong>Why We Use:</strong> Complete graphs provide a simple and intuitive way to model fully connected relationships between entities, enabling efficient analysis of global network properties.</li>
+        </ul>
+        <p><strong>Explanation:</strong> Think of a complete graph as a group of friends where everyone is friends with everyone else. In a complete graph, every person (node) is directly connected to every other person (node) in the group.</p>
+        <ul class="complete-graph-info">
+            <li><strong>When to Use:</strong> Use when you want to show that everything is connected to everything else, like in a fully connected network.</li>
+        </ul>
+        <h3>Diagram:</h3>
+        <pre>
+           A --- B
+           |  /  |
+           | /   |
+           C --- D
+        </pre>
+    </div>
+
+  <div class="information">
+        <h2>Subgraph:</h2>
+        <ul class="subgraph-info">
+            <li><strong>Real-time Example:</strong> In a company's organizational chart, a subgraph could represent a specific department's hierarchy within the larger organizational structure.</li>
+            <li><strong>Definition:</strong> A graph that consists of a subset of the nodes and edges of a larger graph.</li>
+            <li><strong>When to Use:</strong> Subgraphs are useful for analyzing specific parts or subsets of larger graphs, focusing on particular relationships or components within the graph.</li>
+            <li><strong>When Not to Use:</strong> Avoid using subgraphs if you need to analyze the entire graph or if the subset of nodes and edges doesn't provide meaningful insights into the larger structure.</li>
+            <li><strong>Why We Use:</strong> Subgraphs allow us to break down complex graphs into manageable parts, facilitating targeted analysis and exploration of specific relationships or components.</li>
+        </ul>
+        <p><strong>Explanation:</strong> A subgraph is like taking a portion of a big picture. Let's say you have a large map of a city, and you zoom in to focus on just one neighborhood. That neighborhood map is a subgraph of the larger city map.</p>
+        <ul class="subgraph-info">
+            <li><strong>When to Use:</strong> Use when you want to analyze or focus on a specific part of a larger graph.</li>
+        </ul>
+    </div>
+ <div class="information">
+        <h2>Graph Representation</h2>
+        <!-- Content for graph representation goes here -->
+
+        <h3>Adjacency:</h3>
+        <ul class="adjacency-info">
+            <li><strong>Real-time Example:</strong> In a subway map, adjacent stations are those connected by a direct subway line without any intermediate stops.</li>
+            <li><strong>When to Use:</strong> Adjacency is a fundamental property of graphs and is used in various graph algorithms and analyses, such as identifying neighboring nodes or determining connectivity.</li>
+            <li><strong>When Not to Use:</strong> There's typically no scenario where adjacency isn't relevant in graph theory or graph analysis.</li>
+            <li><strong>Why We Use:</strong> Adjacency provides essential information about the connectivity and structure of graphs, guiding numerous graph algorithms and analyses.</li>
+        </ul>
+      <ul class="adjacency-info">
+            <li><strong>Explanation:</strong> Adjacency refers to the property of being directly connected or adjacent to each other in a graph. Two nodes are adjacent if there is an edge connecting them.</li>
+            <li><strong>Explanation:</strong> Adjacency simply means being directly connected or next to each other. Think of it like neighbors living next door to each other. If two houses share a fence, they're adjacent.</li>
+            <li><strong>When to Use:</strong> Always use when you need to know if two things are directly connected or next to each other in your graph.</li>
+
+        <h3>Diagram:</h3>
+        <pre>
+           A --- B
+           |     |
+           C --- D
+        </pre>
+        <p><strong>Real-time Example:</strong> In a social network, users are nodes, and friendships are edges. If user A is friends with user B, then A and B are adjacent.</p>
+    </div>
+    </ul>
+     <h3>Adjacency Matrix:</h3>
+        <ul class="adjacency-matrix-info">
+            <li><strong>Explanation:</strong> An adjacency matrix is a square matrix used to represent the connections between nodes in a graph. Each cell in the matrix indicates whether there is an edge between the corresponding nodes.</li>
+            <li><strong>When to Use:</strong> Adjacency matrices are suitable for representing dense graphs with many edges, as they provide a compact way to store connectivity information between nodes.</li>
+            <li><strong>When Not to Use:</strong> Avoid using adjacency matrices for sparse graphs with few edges, as they can result in inefficient memory usage and computational overhead.</li>
+            <li><strong>Why We Use:</strong> Adjacency matrices enable fast access to edge information and support efficient matrix-based operations, making them ideal for certain graph algorithms and analyses.</li>
+            <li><strong>Explanation:</strong> An adjacency matrix is like a table that shows who is friends with whom. Each row and column represents a person (node), and if there's a mark where a row and column intersect, it means those two people (nodes) are friends (connected).</li>
+            <li><strong>When to Use:</strong> Use when you want to quickly see who is connected to whom in your graph, especially if there are many connections.</li>
+        </ul>
+        <h3>Example:</h3>
+        <pre>
+            A  B  C  D
+          -------------
+        A | 0  1  1  0
+        B | 1  0  1  1
+        C | 1  1  0  1
+        D | 0  1  1  0
+        </pre>
+        <p><strong>Real-time Example:</strong> In a transportation network, an adjacency matrix could represent the connections between different cities, with 1s indicating direct connections and 0s indicating no direct connection.</p>
+    </div>
+     <div class="information">
+
+        <h3>Adjacency List:</h3>
+        <ul class="adjacency-list-info">
+            <li><strong>Explanation:</strong> An adjacency list is a data structure used to represent the connections between nodes by storing a list of neighbors for each node. Each node has a list of other nodes it's directly connected to.</li>
+            <li><strong>When to Use:</strong> Adjacency lists are suitable for representing sparse graphs with few edges, as they offer efficient memory usage by only storing connections for each node.</li>
+            <li><strong>When Not to Use:</strong> Avoid using adjacency lists for dense graphs with many edges, as they may result in higher memory overhead compared to adjacency matrices.</li>
+            <li><strong>Why We Use:</strong> Adjacency lists facilitate efficient traversal and exploration of graph structures, especially in scenarios where memory efficiency is a concern.</li>
+            <li><strong>Explanation:</strong> An adjacency list is like having a list of friends for each person. Each person (node) has a list of their friends (nodes they are connected to). You can quickly see who someone is friends with by looking at their list.</li>
+            <li><strong>When to Use:</strong> Use when you want a more compact way to store connections in your graph, especially if there are fewer connections overall.</li>
+        </ul>
+        <h3>Example:</h3>
+        <pre>
+            A: B, C
+            B: A, C, D
+            C: A, B, D
+            D: B, C
+        </pre>
+        <p><strong>Real-time Example:</strong> In a computer network, an adjacency list could represent the connections between routers, with each router having a list of neighboring routers it's connected to.</p>
+    </div>
+     <div class="information">
+
+
+        <h3>Incidence Matrix:</h3>
+        <ul class="incidence-matrix-info">
+            <li><strong>Explanation:</strong> An incidence matrix is used to represent which nodes are incident to each edge in a graph. Each row represents a node, and each column represents an edge. A cell contains a 1 if the corresponding node is incident to the edge, otherwise 0.</li>
+            <li><strong>When to Use:</strong> Incidence matrices are useful for representing relationships between nodes and edges in directed graphs or graphs with edge-specific attributes, such as edge weights or capacities.</li>
+            <li><strong>When Not to Use:</strong> Avoid using incidence matrices for undirected graphs with simple edge connections, as they may result in unnecessary complexity and overhead.</li>
+            <li><strong>Why We Use:</strong> Incidence matrices provide a structured way to represent node-edge relationships and support various graph algorithms and analyses, particularly those involving directed graphs or edge-specific attributes.</li>
+            <li><strong>Explanation:</strong> An incidence matrix shows which nodes are involved in each edge. It's like a table where rows represent nodes, columns represent edges, and a mark in a cell means the node is part of that edge.</li>
+            <li><strong>When to Use:</strong> Use when you need to know which nodes are connected by each edge in your graph, especially if there are specific attributes or properties associated with edges.</li>
+        </ul>
+        <h3>Example:</h3>
+        <pre>
+            <code>
+                e1 e2 e3
+              ----------
+            A | 1   1  0
+            B | 1   0  1
+            C | 0   1  1
+            D | 0   1  1
+            </code>
+        </pre>
+        <p><strong>Real-time Example:</strong> In a road network, an incidence matrix could represent which intersections are incident to each road, with 1s indicating intersections where the road passes through.</p>
+    </div>
+     <div class="information">
+        <h2>Spanning Tree</h2>
+        <!-- Content for spanning tree goes here -->
+
+        <ul class="spanning-tree-info">
+            <li><strong>Explanation:</strong> A spanning tree is a subgraph of a graph that is a tree (connected and acyclic) and includes all the nodes of the original graph. It forms a connected pathway through all nodes without creating any cycles.</li>
+            <li><strong>When to Use:</strong> Spanning trees are used to identify the minimal connected subgraph that includes all nodes of the original graph, making them valuable for network design, routing algorithms, and broadcast protocols.</li>
+            <li><strong>When Not to Use:</strong> Avoid using spanning trees if the application or analysis doesn't require a minimal connected subgraph or if alternative graph structures better suit the problem.</li>
+            <li><strong>Why We Use:</strong> Spanning trees help ensure network connectivity and facilitate efficient data transmission and communication across all nodes in a graph, making them essential in network optimization and management.</li>
+            <li><strong>Explanation:</strong> A spanning tree is like the main branches of a tree that cover all parts of the tree without forming any loops. In a graph, it's a connected subset of nodes and edges that reach every node without forming any cycles.</li>
+            <li><strong>When to Use:</strong> Use when you want to find the essential structure that connects all nodes in your graph, useful for designing efficient networks or routes.</li>
+        </ul>
+        <h3>Diagram:</h3>
+        <pre>
+            <code>
+                A
+                |
+                B
+               / \
+              C   D
+            </code>
+        </pre>
+        <p><strong>Real-time Example:</strong> In a computer network, a spanning tree could represent the optimal network configuration to ensure all devices are connected without any loops, improving efficiency and reducing data collisions.</p>
+    </div>
+ <div class="information">
+        <h2>Traversal</h2>
+        <!-- Content for traversal goes here -->
+
+        <ul class="traversal-info">
+            <li><strong>Explanation:</strong> Traversal involves systematically visiting all the nodes in a graph. There are different methods of traversal, such as breadth-first search (BFS) and depth-first search (DFS), each with its own approach for visiting nodes.</li>
+            <li><strong>Real-time Example:</strong> In a web crawler, traversal is used to systematically visit and index web pages on the internet. BFS might visit all pages on a single website before moving to the next, while DFS might explore deeper into each website before moving to the next.</li>
+            <li><strong>When to Use:</strong> Traversal algorithms are used to systematically visit all nodes in a graph, making them essential for various graph-based tasks such as pathfinding, connectivity analysis, and data processing.</li>
+            <li><strong>When Not to Use:</strong> There are no scenarios where traversal algorithms aren't relevant in graph analysis or graph-based tasks.</li>
+            <li><strong>Why We Use:</strong> Traversal algorithms enable us to explore and analyze the structure of graphs, uncovering valuable insights and information about connectivity, relationships, and network properties.</li>
+            <li><strong>Explanation:</strong> Traversal is like exploring all the rooms in a house one by one. It's a way to systematically visit each node in a graph, ensuring no node is missed, and you see the whole graph.</li>
+            <li><strong>When to Use:</strong> Use when you want to analyze or process every part of your graph, useful for tasks like finding paths, checking connectivity, or searching for specific nodes.</li>
+        </ul>
+    </div>
+ <header>
+        <h1>Graph Theory Glossary</h1>
+    </header>
+    <div class="information">
+        <h2>Planar Graph</h2>
+        <p>A graph that can be drawn on a plane without any edges crossing each other.</p>
+
+        <h2>Eulerian Path/Circuit</h2>
+        <p>A path or circuit that visits every edge exactly once.</p>
+
+        <h2>Hamiltonian Path/Cycle</h2>
+        <p>A path or cycle that visits every node exactly once.</p>
+
+        <h2>Bipartite Graph</h2>
+        <p>A graph whose nodes can be divided into two disjoint sets such that no two nodes within the same set are adjacent.</p>
+
+        <h2>Tree</h2>
+        <p>A connected graph with no cycles.</p>
+
+        <h2>Forest</h2>
+        <p>A graph without any cycles, consisting of one or more disjoint trees.</p>
+
+        <h2>Isomorphism</h2>
+        <p>When two graphs have the same structure, but the nodes and edges may be labeled differently.</p>
+
+        <h2>Graph Coloring</h2>
+        <p>Assigning colors to the nodes of a graph such that no two adjacent nodes have the same color.</p>
+
+        <h2>Centrality Measures</h2>
+        <p>Metrics used to identify the importance or centrality of nodes within a graph, such as degree centrality, betweenness centrality, and closeness centrality.</p>
+
+        <h2>Graph Algorithms</h2>
+        <p>Various algorithms designed to solve problems on graphs, such as shortest path algorithms (Dijkstra's algorithm, Bellman-Ford algorithm), minimum spanning tree algorithms (Prim's algorithm, Kruskal's algorithm), and graph traversal algorithms (depth-first search, breadth-first search).</p>
+    </div>
+ <div class="information">
+        <h2>When to Use Graphs:</h2>
+        <ul>
+            <li><strong>Representing Relationships:</strong> Graphs are useful for representing relationships between entities. For example, in social networks, nodes can represent users, and edges can represent friendships or connections between users.</li>
+            <li><strong>Network Analysis:</strong> Graphs are used for network analysis, such as determining the shortest path between two nodes, identifying clusters of nodes, or analyzing connectivity patterns.</li>
+            <li><strong>Optimization Problems:</strong> Graphs are applicable in optimization problems, such as finding the most efficient route in a transportation network or minimizing the cost in a supply chain.</li>
+            <li><strong>Decision Making:</strong> Graphs can aid in decision making by visualizing complex relationships or dependencies between variables.</li>
+            <li><strong>Algorithm Design:</strong> Many algorithms are designed based on graph structures, such as shortest path algorithms (e.g., Dijkstra's algorithm), graph traversal algorithms (e.g., depth-first search, breadth-first search), and network flow algorithms (e.g., Ford-Fulkerson algorithm).</li>
+        </ul>
+
+        <h2>When Not to Use Graphs:</h2>
+        <ul>
+            <li><strong>Simple Data Storage:</strong> If the data structure is straightforward and doesn't involve relationships between entities, using a graph might introduce unnecessary complexity.</li>
+            <li><strong>Performance Concerns:</strong> In cases where the size of the graph is too large or the graph operations are performance-sensitive, other data structures may be more suitable.</li>
+            <li><strong>Structured Data:</strong> If the data can be represented efficiently using other data structures like arrays, lists, or maps, using a graph may not be necessary.</li>
+            <li><strong>Limited Connectivity:</strong> If the data doesn't involve interconnected entities or relationships between them, using a graph might not provide any significant benefits.</li>
+            <li><strong>Space Complexity:</strong> Graphs can have a higher space complexity compared to other data structures, especially when representing dense graphs or storing additional information like weights.</li>
+        </ul>
+
+        <h2>Why We Use Graphs:</h2>
+        <ul>
+            <li><strong>Flexibility:</strong> Graphs provide a flexible way to represent complex relationships and structures, allowing for various types of analysis and problem-solving.</li>
+            <li><strong>Visualization:</strong> Graphs offer a visual representation of data, making it easier to understand and interpret complex relationships and patterns.</li>
+            <li><strong>Problem Solving:</strong> Many real-world problems can be modeled and solved efficiently using graph-based algorithms, making graphs a powerful tool in problem-solving.</li>
+            <li><strong>Versatility:</strong> Graphs can model a wide range of scenarios and problems, from social networks and transportation networks to computer networks and supply chains.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 @sudheer debbati</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
